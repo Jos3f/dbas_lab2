@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="requestHandle.js" type="text/javascript"></script>
+  <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+  <script src='lib/moment.js'></script>
+  <script src='fullcalendar/fullcalendar.js'></script>
+
+  <!-- Bootstrap stylesheet -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- ClockPicker Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="clockpicker-gh-pages/dist/bootstrap-clockpicker.min.css">
+
+  <!-- ClockPicker script -->
+  <script type="text/javascript" src="clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
+
+
+</head>
+
+<body>
+  <div class="userselect">
+    Logged in as:
+    <select id="user">
+      <option value="volvo">Volvo</option>
+
+    </select>
+
+  <!--  <button type="button" name="button" id="user_button">Select</button> -->
+  </div>
+
+
+
+  <div class="result">
+
+  </div>
+
+  <div class="roomselecter">
+    Choose room:
+    <select id="room">
+      <option value="volvo">Volvo</option>
+    </select>
+
+    <!-- <button type="button" name="button" id="room_button">Select</button> -->
+  </div>
+
+  <div class="roomPresent">
+    This room has:
+    <li>Tv</li>
+    <li>Whiteboeard</li>
+  </div>
+
+  <div class="booking">
+    Book this room:
+
+
+    <div class="date">
+      Date: <input type="text" name="" id="datepicker" value="">
+    </div>
+
+    <div class="input-group clockpicker">
+      Start time: &nbsp
+      <input type="text" class="form-control" id="start_time" value="09:30">
+      <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+      </span>
+    </div>
+
+    <div class="input-group clockpicker">
+      End time: &nbsp &nbsp
+      <input type="text" class="form-control" id="end_time" value="09:30">
+      <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+      </span>
+    </div>
+
+    <div class="" id="addpeople_outer">
+      <div id="addpeople">
+        <input type="checkbox" id="p1" name="" value="1">
+        <label for="p1">bob</label>
+      </div>
+
+    </div>
+
+    <button type="button" name="button" id="book_button">Book</button>
+  </div>
+
+  <div id='calendar'></div>
+
+  <div class="roomdelete">
+    Meeting to delete:
+    <form class="roomsel" action="index.html" method="post">
+      <input type="radio" name="room" value="1"> 1 14:30
+      <br>
+      <input type="radio" name="room" value="1"> 2 14:30
+      <br>
+      <input type="radio" name="room" value="1"> 1 14:30
+      <br>
+      <input type="radio" name="room" value="1"> 1 14:30
+    </form>
+
+  <button type="button" name="button" id="remove_button">remove</button>
+  </div>
+
+  <div class="message">
+
+  </div>
+
+
+</body>
+
+</html>

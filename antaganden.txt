@@ -1,0 +1,7 @@
+Antaganden:
+* Att tillhöra Team nr 1 (den med id = 1) är ekvivalent med att vara teamlös enligt detta företag och detta "team" går ej att ta bort. 
+* Team tas bort genom att man sätter is_active till 0 och alla som är i teamet blir teamlösa.
+* Man får endast boka över ett datum.
+* Rooms får man inte ta bort.
+* Om personen är utan team så debiteras det team-lösa teamet.
+* Bookingens kostnad läggs på teamet som personen tillhörde vid tidpunkten då bokningen skedde.

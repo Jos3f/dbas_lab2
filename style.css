@@ -1,0 +1,44 @@
+.userselect, .button, .roomselecter, .booking,
+.roomPresent, .date, .clockpicker, .roomdelete, .message {
+  margin: 5px;
+}
+
+.roomPresent {
+  background-color: orange;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  max-width: 500px;
+}
+
+.form-control {
+  max-width: 150px;
+}
+
+.booking {
+  background-color: grey;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  width: 500px;
+  color: white;
+}
+
+.roomdelete {
+    background-color: lightblue;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    width: 500px;
+    color: black;
+}
+
+.message {
+      background-color: red;
+      padding: 5px;
+      border-style: solid;
+      border-color: black;
+      width: 500px;
+      color: white;
+      display: none;
+}
